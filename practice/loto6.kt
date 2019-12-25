@@ -1,14 +1,19 @@
 fun main(args: Array<String>){
-	for(i in 0..50){
-		var point: Int = (0..4).random()
-		println("$i)")
-		for(i in 0..4){
-			if(point == i){
-				print("*")
+	var shuffle: Int = (1..100).random()
+	var candidate: Int = (1..shuffle).random()
+	
+	for(index in 0..shuffle){
+		if(index == candidate){
+			var point: Int = (0..4).random()
+			println("Åö)")
+			for(i in 0..4){
+				if(point == i){
+					print("*")
+				}
+				loto6()
 			}
-			loto6()
+			println()
 		}
-		println()
 	}
 }
 
