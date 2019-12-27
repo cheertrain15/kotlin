@@ -1,8 +1,9 @@
+import java.util.Date
+
 fun main(args: Array<String>){
-	var shuffle: Int = (1..100).random()
-	var candidate: Int = (1..shuffle).random()
-	
-	for(index in 0..shuffle){
+	var todayTime = System.currentTimeMillis().toInt()
+	var candidate: Int = (1..todayTime).random()
+	for(index in 0..todayTime){
 		if(index == candidate){
 			var point: Int = (0..4).random()
 			println("Åö)")
